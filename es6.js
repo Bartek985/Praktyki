@@ -141,10 +141,39 @@ write(8)
 
 write(9)
 
-// for ...of
-const array = ['a', 'b', 'c', 'd'];
-for (const element of array) {
+const letters = ['a', 'b', 'c', 'd'];
+for (const element of letters) {
     console.log(element);
 }
 
 write(10)
+
+function point(x = 0, y = -1, isFlag = true) {
+    console.log(x, y, isFlag);
+}
+
+point(0, 0) // 0 0 true
+point(0, 0, false) // 0 0 false
+point(1) // 1 -1 true
+point() // 0 -1 true
+
+write(11)
+
+function printf(format, ...params) {
+    console.log('params: ', params);
+    console.log('format: ', format);
+}
+
+printf('%s %d %.2f', 'adrian', 321, Math.PI);
+
+write(12)
+console.log(Math.max(...[2, 100, 1, 6, 43])) // 100
+short()
+
+const array1 = [2, 100, 1, 6, 43];
+const array2 = ['a', 'b', 'c', 'd'];
+const array3 = [false, true, null, undefined];
+
+console.log([...array1, ...array2, ...array3]);
+
+//Around 25% less code with es6 :)

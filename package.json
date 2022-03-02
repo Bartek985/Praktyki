@@ -1,0 +1,19 @@
+{
+  "name": "praktyki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bartek985/Praktyki.git"
+  },
+  "author": "Bartek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bartek985/Praktyki/issues"
+  },
+  "homepage": "https://github.com/Bartek985/Praktyki#readme"
+}
